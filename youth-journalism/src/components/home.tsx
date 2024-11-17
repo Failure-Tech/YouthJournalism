@@ -2,7 +2,7 @@ const Home = () => {
     return (
         <>
             <div>
-                <h1 style={{color: 'black'}}>whats up i like men</h1>
+                <h1 style={{color: 'black'}}>whats up home page coming soon</h1>
             </div>
         </>
     )

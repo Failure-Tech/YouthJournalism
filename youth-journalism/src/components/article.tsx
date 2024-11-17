@@ -140,7 +140,7 @@
 // };
 
 // export default Article;
-import React, { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { 
     FaHandsClapping, 
     FaRegComment, 
@@ -161,7 +161,7 @@ const Article = () => {
         return savedClaps ? parseInt(savedClaps, 0) : 0;
     });
     const [isPlaying, setIsPlaying] = useState(false);
-    const [utterance, setUtterance] = useState(null);
+    const [utterance, setUtterance] = useState<SpeechSynthesisUtterance | null>(null);
 
     // Save claps to localStorage whenever it changes
     useEffect(() => {
